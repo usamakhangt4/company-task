@@ -50,7 +50,7 @@ export const OrderDetails = () => (
               <CustomChip bgColor="bg-black" title="Uber" />
               <p className="text-gray-dark">On the way</p>
             </div>
-            <p className="shadow-button px-5 py-3 rounded-full text-blue-dark2 text-4xl">
+            <p className="shadow-button px-5 py-2 rounded-full text-blue-dark2 text-4xl">
               Track
             </p>
           </section>
