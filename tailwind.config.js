@@ -24,6 +24,7 @@ module.exports = {
           light: "#e9e9e9",
           light1: "rgba(216,216,216,0.2)",
           light2: "#717374",
+          light3: "#f7f7f7",
         },
         orange: {
           dark: "#fd6c00",
@@ -31,7 +32,7 @@ module.exports = {
         red: {
           dark: "#e02020",
         },
-        green: {dark: "#5eb602"},
+        green: {dark: "#5eb602", light: "#5eb602"},
         blue: {light: "#007aff", dark: "#0386f6", dark2: "#067aff"},
       },
       fontSize: {
@@ -52,6 +53,9 @@ module.exports = {
       fontFamily: {
         sans: ["Helvetica Now Text", "sans-serif"],
         "arial-rounded": ["Arial Rounded", "sans-serif"],
+      },
+      borderRadius: {
+        sm1: "3px",
       },
     },
   },

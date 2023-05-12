@@ -8,7 +8,7 @@ export const CustomChip = (props: CustomChipProps) => {
 
   return (
     <p
-      className={`text-xs font-semibold text-white px-2 py-1 rounded-sm text-center ${bgColor}`}>
+      className={`text-xs font-semibold text-white px-2 py-1 rounded-sm1 text-center ${bgColor}`}>
       {title}
     </p>
   );

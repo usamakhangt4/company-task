@@ -1,6 +1,6 @@
 import {ChefIcon, DownIcon, FutureIcon, HistoryIcon} from "@/assets/icons";
 import {SearchField} from "../molecules/SearchField";
-import {OrderCard} from "../molecules/OrderCard";
+import {DeliveryCard} from "../molecules/DeliveryCard";
 import {deliveries} from "@/jsonObjects/deliveries";
 
 export const Sidebar = () => {
@@ -33,7 +33,7 @@ export const Sidebar = () => {
               },
               index
             ) => (
-              <OrderCard
+              <DeliveryCard
                 OverDue={OverDue}
                 amount={amount}
                 isVIP={isVIP}
