@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Arial Rounded";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/ARLRDBD.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/HelveticaNowText-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/HelveticaNowText-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/HelveticaNowText-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/HelveticaNowText-Light.woff") format("woff");
+}
+
+body {
+  color: rgb(0, 0, 0);
+  background: egb(255, 255, 255);
+}
