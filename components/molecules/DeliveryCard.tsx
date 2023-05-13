@@ -12,6 +12,9 @@ interface DeliveryCardProps {
   peopleCount: string;
   chipTitle: string;
   isSelected: boolean;
+  companyChipTextColor: string;
+  companyChipBgColor: string;
+  companyChipTitle: string;
 }
 export const DeliveryCard = (props: DeliveryCardProps) => {
   const {
@@ -25,6 +28,9 @@ export const DeliveryCard = (props: DeliveryCardProps) => {
     isSelected,
     peopleCount = 0,
     chipTitle,
+    companyChipBgColor,
+    companyChipTextColor,
+    companyChipTitle,
   } = props;
 
   return (
@@ -76,7 +82,11 @@ export const DeliveryCard = (props: DeliveryCardProps) => {
             }
             title={chipTitle}
           />
-          <CustomChip bgColor="bg-indigo-500" title="icon" />
+          <CustomChip
+            bgColor={companyChipBgColor}
+            titleColor={companyChipTextColor}
+            title={companyChipTitle}
+          />
         </div>
       </section>
     </section>

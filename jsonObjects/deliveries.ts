@@ -10,6 +10,11 @@ export const deliveries = [
     type: "table",
     chipTitle: "Table 32",
     isSelected: false,
+    company: {
+      title: "RESY",
+      bgColor: "bg-gray-light",
+      color: "text-orange-dark1",
+    },
   },
   {
     name: "Cho Chang",
@@ -22,6 +27,11 @@ export const deliveries = [
     type: "delivery",
     chipTitle: "Delivery #5623",
     isSelected: false,
+    company: {
+      title: "-",
+      bgColor: "bg-cyan-dark",
+      color: "text-white",
+    },
   },
   {
     name: "Johnny Appleseed",
@@ -34,6 +44,11 @@ export const deliveries = [
     type: "delivery",
     chipTitle: "Delivery #4302",
     isSelected: true,
+    company: {
+      title: "Web",
+      bgColor: "bg-gray-light",
+      color: "text-gray-dark",
+    },
   },
   {
     name: "Romilda Vane",
@@ -46,6 +61,11 @@ export const deliveries = [
     type: "pickup",
     chipTitle: "Pickup #6452",
     isSelected: false,
+    company: {
+      title: "Uber",
+      bgColor: "bg-black",
+      color: "text-white",
+    },
   },
   {
     name: "Lee Jordan",
@@ -58,5 +78,10 @@ export const deliveries = [
     type: "delivery",
     chipTitle: "Delivery #9830",
     isSelected: false,
+    company: {
+      title: "-",
+      bgColor: "bg-orange-dark2",
+      color: "text-white",
+    },
   },
 ];

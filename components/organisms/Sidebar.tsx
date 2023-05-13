@@ -30,6 +30,7 @@ export const Sidebar = () => {
                 isSelected,
                 peopleCount,
                 chipTitle,
+                company,
               },
               index
             ) => (
@@ -45,6 +46,9 @@ export const Sidebar = () => {
                 isSelected={isSelected}
                 chipTitle={chipTitle}
                 key={index + name}
+                companyChipBgColor={company.bgColor}
+                companyChipTextColor={company.color}
+                companyChipTitle={company.title}
               />
             )
           )}

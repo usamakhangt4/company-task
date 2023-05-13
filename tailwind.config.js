@@ -30,12 +30,15 @@ module.exports = {
         },
         orange: {
           dark: "#fd6c00",
+          dark1: "#ff462d",
+          dark2: "#ff3008",
         },
         red: {
           dark: "#e02020",
         },
         green: {dark: "#5eb602", light: "#5eb602"},
         blue: {light: "#007aff", dark: "#0386f6", dark2: "#067aff"},
+        cyan: {dark: "#00ccbc"},
       },
       fontSize: {
         xs: "12.5px",
