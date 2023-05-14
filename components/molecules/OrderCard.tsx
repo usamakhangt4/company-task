@@ -9,8 +9,8 @@ interface OrderCardProps {
 export const OrderCard = (props: OrderCardProps) => {
   const {imageurl, instructions, price, title} = props;
   return (
-    <article className="flex gap-6 justify-between odd:bg-gray-light3 px-6 py-3">
-      <figure className="shadow-button w-11 h-11">
+    <article className="flex gap-6 justify-between items-center border-t border-gray-100 odd:bg-gray-light3 px-6 py-3">
+      <figure className="shadow-button w-11 h-11 rounded-sm2 p-2">
         <img src={imageurl} alt="" />
       </figure>
       <div className="mr-auto ">

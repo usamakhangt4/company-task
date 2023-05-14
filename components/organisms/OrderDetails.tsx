@@ -36,7 +36,7 @@ export const OrderDetails = () => (
       </div>
       <section className="px-6  mt-4 shadow-delivery-card-header relative z-10">
         <div className="flex justify-between gap-4">
-          <section className="flex gap-4 items-center py-3">
+          <section className="flex gap-4 items-center py-2">
             <ClockIcon />
             <div className="flex gap-1">
               <p className="text-green-light">Expected in 26 mins</p>
@@ -45,7 +45,7 @@ export const OrderDetails = () => (
             <DownIcon />
           </section>
           <span className="border-r-2"></span>
-          <section className="flex items-center gap-11 py-3">
+          <section className="flex items-center gap-11 py-2">
             <div className="flex items-center gap-3">
               <CustomChip bgColor="bg-black" title="Uber" />
               <p className="text-gray-dark">On the way</p>

@@ -55,8 +55,8 @@ export const Sidebar = () => {
         </section>
       </section>
       <section className="shadow-top">
-        <section className="flex border-b-2">
-          <section className="flex items-center flex-1 justify-between px-4 border-r-2 py-3">
+        <section className="flex border-b">
+          <section className="flex items-center flex-1 justify-between px-4 border-r py-3">
             <div>
               <p className="text-base text-gray-light-text font-semibold">
                 Collection
