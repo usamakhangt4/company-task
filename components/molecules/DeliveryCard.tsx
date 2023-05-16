@@ -12,9 +12,7 @@ interface DeliveryCardProps {
   peopleCount: string;
   chipTitle: string;
   isSelected: boolean;
-  companyChipTextColor: string;
-  companyChipBgColor: string;
-  companyChipTitle: string;
+  company: JSX.Element;
 }
 export const DeliveryCard = (props: DeliveryCardProps) => {
   const {
@@ -28,16 +26,14 @@ export const DeliveryCard = (props: DeliveryCardProps) => {
     isSelected,
     peopleCount = 0,
     chipTitle,
-    companyChipBgColor,
-    companyChipTextColor,
-    companyChipTitle,
+    company,
   } = props;
 
   return (
     <section
       className={`${
         OverDue ? "bg-gray-light1" : isSelected ? "bg-blue-dark2" : ""
-      } py-2 px-5 border-t-2 last:border-b-2 flex flex-col gap-3 w-sidebar-max`}>
+      } py-[10.5px] px-[18px] border-t-2 last:border-b-2 flex flex-col justify-between w-sidebar-max h-20`}>
       <section className="flex justify-between items-center gap-3">
         <p
           className={`flex-1 flex items-center justify-start gap-3 text-5xl ${
@@ -56,7 +52,14 @@ export const DeliveryCard = (props: DeliveryCardProps) => {
           className={`flex items-center justify-start gap-2 ${
             isSelected && "text-white"
           }`}>
-          {paymentMethod === "cash" ? <CashIcon /> : <AtmCardIcon />} {amount}
+          {paymentMethod === "cash" ? (
+            <CashIcon />
+          ) : (
+            <span className={`${isSelected && "fill-white"}`}>
+              <AtmCardIcon />
+            </span>
+          )}{" "}
+          {amount}
         </p>
       </section>
       <section className="flex items-center justify-between font-semibold text-3xl">
@@ -82,11 +85,7 @@ export const DeliveryCard = (props: DeliveryCardProps) => {
             }
             title={chipTitle}
           />
-          <CustomChip
-            bgColor={companyChipBgColor}
-            titleColor={companyChipTextColor}
-            title={companyChipTitle}
-          />
+          <span>{company}</span>
         </div>
       </section>
     </section>

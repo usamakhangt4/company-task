@@ -6,9 +6,9 @@ import {
   HomeIcon,
   MasterCardIcon,
 } from "@/assets/icons";
-import {CustomChip} from "../atoms/CustomChip";
 import {OrderCard} from "../molecules/OrderCard";
 import {Orders} from "@/jsonObjects/Orders";
+import {UberIcon} from "@/assets/companiesIcons";
 
 export const OrderDetails = () => (
   <section className="flex flex-col justify-between h-full">
@@ -28,29 +28,31 @@ export const OrderDetails = () => (
           </p>
         </div>
       </div>
-      <div className="mx-6 mt-5 flex items-center gap-4">
+      <div className="mx-[22px] mt-5 flex items-center gap-4">
         <HomeIcon />
         <p className="text-4xl text-gray-dark">
           Level 3, 2 Malop Street, Geelong
         </p>
       </div>
-      <section className="px-6  mt-4 shadow-delivery-card-header relative z-10">
+      <section className="pr-5 pl-[22px] mt-4 shadow-delivery-card-header relative z-10">
         <div className="flex justify-between gap-4">
           <section className="flex gap-4 items-center py-2">
             <ClockIcon />
-            <div className="flex gap-1">
+            <div className="flex w-60">
               <p className="text-green-light">Expected in 26 mins</p>
-              <p className="text-gray-dark">- 7:34pm</p>
+              <p className="text-gray-dark ml-[5px]">- 7:34pm</p>
             </div>
-            <DownIcon />
+            <span className="w-8 h-6 ">
+              <DownIcon />
+            </span>
           </section>
-          <span className="border-r-2"></span>
-          <section className="flex items-center gap-11 py-2">
+          <span className="border-r"></span>
+          <section className="flex items-center justify-between w-60 py-2">
             <div className="flex items-center gap-3">
-              <CustomChip bgColor="bg-black" title="Uber" />
+              <UberIcon />
               <p className="text-gray-dark">On the way</p>
             </div>
-            <p className="shadow-button px-5 py-2 rounded-full text-blue-dark2 text-4xl">
+            <p className="grid place-items-center shadow-button w-20 h-9 rounded-full text-blue-dark2 text-4xl font-semibold">
               Track
             </p>
           </section>
@@ -72,7 +74,7 @@ export const OrderDetails = () => (
       </section>
     </section>
     <section className="px-6 py-4 shadow-top flex justify-between gap-9 items-center">
-      <div className="py-2 px-3 shadow-button border inline-block">
+      <div className="grid place-items-center w-custom-46 h-8 shadow-button border ">
         <MasterCardIcon />
       </div>
       <p className="ml-auto text-gray-dark text-opacity-60 text-lg">

@@ -10,8 +10,11 @@ export const Sidebar = () => {
         <section className="mx-4 py-3">
           <header className="flex justify-between items-center mb-2">
             <p className="text-8xl text-gray-dark font-semibold">Current</p>
-            <p className="flex gap-3 items-baseline text-gray-dark text-3xl">
-              Expected Time <DownIcon />
+            <p className="flex gap-3 items-end text-gray-dark text-3xl">
+              Expected Time{" "}
+              <span className="w-7 h-5 ">
+                <DownIcon />
+              </span>
             </p>
           </header>
           <SearchField />
@@ -46,9 +49,7 @@ export const Sidebar = () => {
                 isSelected={isSelected}
                 chipTitle={chipTitle}
                 key={index + name}
-                companyChipBgColor={company.bgColor}
-                companyChipTextColor={company.color}
-                companyChipTitle={company.title}
+                company={company}
               />
             )
           )}
@@ -63,7 +64,7 @@ export const Sidebar = () => {
               </p>
               <p className="text-3xl text-gray-dark">20 mins</p>
             </div>
-            <span className="bg-white shadow-button px-2 py-3 rounded-full">
+            <span className="bg-white shadow-button h-[26px] w-[26px] px-1 py-1 rounded-full">
               <DownIcon />
             </span>
           </section>
@@ -74,7 +75,7 @@ export const Sidebar = () => {
               </p>
               <p className="text-3xl text-gray-dark">45 mins</p>
             </div>
-            <span className="bg-white shadow-button px-2 py-3 rounded-full">
+            <span className="bg-white shadow-button h-[26px] w-[26px] px-1 py-1 rounded-full">
               <DownIcon />
             </span>
           </section>

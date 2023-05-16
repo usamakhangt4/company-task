@@ -7,9 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      width: {
-        "sidebar-max": "368px",
-      },
       boxShadow: {
         button: "0 0 5px -2px rgba(0, 0, 0, 0.5)",
         nav: "0px 4px 6px -1px rgba(0, 0, 0, 0.1)",
@@ -66,6 +63,10 @@ module.exports = {
       borderRadius: {
         sm1: "3px",
         sm2: "7px",
+      },
+      width: {
+        "custom-46": "46px",
+        "sidebar-max": "368px",
       },
     },
   },
