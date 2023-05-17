@@ -18,11 +18,11 @@ export const OrderDetails = () => (
           Johnny Appleseed
         </p>
         <div className="flex gap-8">
-          <p className="flex items-center gap-3 text-5xl text-gray-dark">
+          <p className="flex items-center gap-4 text-5xl text-gray-dark">
             <CallIcon />
             Call
           </p>
-          <p className="flex items-center gap-3 text-5xl text-gray-dark">
+          <p className="flex items-center gap-[13px] text-5xl text-gray-dark">
             <ChatIcon />
             Message
           </p>

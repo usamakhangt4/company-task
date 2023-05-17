@@ -10,7 +10,7 @@ export const Sidebar = () => {
         <section className="mx-4 py-3">
           <header className="flex justify-between items-center mb-2">
             <p className="text-8xl text-gray-dark font-semibold">Current</p>
-            <p className="flex gap-3 items-end text-gray-dark text-3xl">
+            <p className="flex gap-1 items-end text-gray-dark text-3xl">
               Expected Time{" "}
               <span className="w-7 h-5 ">
                 <DownIcon />

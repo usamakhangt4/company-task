@@ -11,7 +11,7 @@ module.exports = {
         button: "0 0 5px -2px rgba(0, 0, 0, 0.5)",
         nav: "0px 4px 6px -1px rgba(0, 0, 0, 0.1)",
         sidebar: "-4px 5px 12px -2px rgba(0, 0, 0, 0.5)",
-        top: "0px -2px 9px -1px rgba(0,0,0,0.2)",
+        top: "0px -2px 5px -1px rgba(0,0,0,0.1)",
         "delivery-card-header":
           "0 6px 9px -4.5px rgba(0, 0, 0, 0.1),0 -6px 9px -4.5px rgba(0, 0, 0, 0.1)",
       },
