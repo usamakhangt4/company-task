@@ -25,6 +25,7 @@ module.exports = {
           light2: "#717374",
           light3: "#f7f7f7",
           light4: "rgba(216,216,216,0.43)",
+          light5: "#494b4c",
         },
         orange: {
           dark: "#fd6c00",

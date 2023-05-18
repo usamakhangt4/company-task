@@ -13,7 +13,7 @@ import {UberIcon} from "@/assets/companiesIcons";
 export const OrderDetails = () => (
   <section className="flex flex-col justify-between h-full">
     <section>
-      <div className="mx-6 mt-4 flex justify-between">
+      <div className="mx-6 mt-[22px] flex justify-between">
         <p className="text-9xl text-gray-dark font-semibold">
           Johnny Appleseed
         </p>
@@ -36,7 +36,7 @@ export const OrderDetails = () => (
       </div>
       <section className="pr-5 pl-[22px] mt-4 shadow-delivery-card-header relative z-10">
         <div className="flex justify-between gap-4">
-          <section className="flex gap-4 items-center py-2">
+          <section className="flex gap-4 items-center py-[10.5px]">
             <ClockIcon />
             <div className="flex w-60">
               <p className="text-green-light">Expected in 26 mins</p>
@@ -47,7 +47,7 @@ export const OrderDetails = () => (
             </span>
           </section>
           <span className="border-r"></span>
-          <section className="flex items-center justify-between w-60 py-2">
+          <section className="flex items-center justify-between w-60 py-[10.5px]">
             <div className="flex items-center gap-3">
               <UberIcon />
               <p className="text-gray-dark">On the way</p>

@@ -57,39 +57,39 @@ export const Sidebar = () => {
       </section>
       <section className="shadow-top">
         <section className="flex border-b">
-          <section className="flex items-center flex-1 justify-between px-4 border-r py-3">
+          <section className="flex items-center flex-1 justify-between px-4 border-r py-[5.63px]">
             <div>
               <p className="text-base text-gray-light-text font-semibold">
                 Collection
               </p>
-              <p className="text-3xl text-gray-dark">20 mins</p>
+              <p className="text-[16.5px] text-gray-dark">20 mins</p>
             </div>
             <span className="bg-white shadow-button h-[26px] w-[26px] px-1 py-1 rounded-full">
               <DownIcon />
             </span>
           </section>
-          <section className="flex items-center flex-1 justify-between px-4 py-3">
+          <section className="flex items-center flex-1 justify-between px-4 py-[5.63px]">
             <div>
               <p className="text-base text-gray-light-text font-semibold">
                 Delivery
               </p>
-              <p className="text-3xl text-gray-dark">45 mins</p>
+              <p className="text-[16.5px] text-gray-dark">45 mins</p>
             </div>
             <span className="bg-white shadow-button h-[26px] w-[26px] px-1 py-1 rounded-full">
               <DownIcon />
             </span>
           </section>
         </section>
-        <section className="flex justify-between py-2 px-4">
-          <p className="flex flex-col justify-center items-center gap-1 text-blue-light text-sm">
+        <section className="flex justify-between py-2 pl-[14.5px] pr-[11.5px]">
+          <p className="flex flex-col w-[79px] justify-center items-center gap-1 text-blue-light text-sm">
             <ChefIcon />
             Current
           </p>
-          <p className="flex flex-col justify-center items-center gap-1 text-sm text-gray-light2">
+          <p className="flex flex-col w-[79px] justify-center items-center gap-[6px] text-sm text-gray-light2">
             <FutureIcon />
             Future
           </p>
-          <p className="flex flex-col justify-center items-center gap-1 text-sm text-gray-light2">
+          <p className="flex flex-col w-[79px] justify-center items-center  gap-[5px] text-sm text-gray-light2">
             <HistoryIcon />
             History
           </p>

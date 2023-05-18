@@ -33,7 +33,7 @@ export const DeliveryCard = (props: DeliveryCardProps) => {
     <section
       className={`${
         OverDue ? "bg-gray-light1" : isSelected ? "bg-blue-dark2" : ""
-      } py-[10.5px] px-[18px] border-t-2 last:border-b-2 flex flex-col justify-between w-sidebar-max h-20`}>
+      } py-[10.5px] px-[18px] border-t last:border-b flex flex-col justify-between w-sidebar-max h-20`}>
       <section className="flex justify-between items-center gap-3">
         <p
           className={`flex-1 flex items-center justify-start gap-3 text-5xl ${
@@ -55,7 +55,8 @@ export const DeliveryCard = (props: DeliveryCardProps) => {
           {paymentMethod === "cash" ? (
             <CashIcon />
           ) : (
-            <span className={`${isSelected && "fill-white"}`}>
+            <span
+              className={`${isSelected ? "text-white" : "text-gray-light5"}`}>
               <AtmCardIcon />
             </span>
           )}{" "}
